@@ -106,8 +106,8 @@ const start = () => {
   let count = 3;
   countdownOverlay.style.display = "flex";
 
-  const startCountdown = setInterval(() => {
-    countdownOverlay.innerHTML = '<h1>${count}</h1>';
+  const startCountdown = setInterval( () => {
+    countdownOverlay.innerHTML = `<h1>${count}</h1>`;
 
     // finished timer
     if (count == 0) {
@@ -127,7 +127,7 @@ const start = () => {
 startBtn.addEventListener("click", start);
 
 // If history exists, show it
-displayHistory();
+ displayHistory();
 
 // Show typing time spent
 setInterval(() => {
